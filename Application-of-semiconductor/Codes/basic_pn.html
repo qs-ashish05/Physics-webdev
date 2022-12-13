@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<title>Applications of semiconductor</title>
+	<script src="../../../lib/katex/katex.min.js"></script>
+	<script src="../../../lib/katex/contrib/auto-render.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src='../../../lib/chargeclass.js'></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<style>
+		h2 {
+			display: block;
+			font-size: 1.5em;
+			margin-top: 0.83em;
+			margin-bottom: 0.83em;
+			margin-left: 0;
+			margin-right: 0;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>
+			<a href="../../../">Basics of PN Junction diode</a>
+		</h1>
+	</header>
+	<article>
+        <div class="inro_pn">
+			<h2>PN JUNCTION BASICS</h2>
+			<p>(1) A p-n junction is a boundary or interface between two types of semiconductor materials, p-type and
+				n-type, inside a single crystal of semiconductor. The "p" (positive) side contains an excess of holes,
+				while the "n" (negative) side contains an excess of electrons in the outer shells of the electrically
+				neutral atoms there. This allows electrical current to pass through the junction only in one direction.
+				The p-n junction is created by doping</p>
+
+			<p>(2) p-n junctions are elementary "building blocks" of semiconductor electronic devices such as diodes,
+				transistors, solar cells, light-emitting diodes (LEDs), and integrated circuits.</p>
+
+			<p> * Symbol for PN junction diode is as shown in figure</p>
+			<figure><img src="../Resources/Diode-Symbol.png" alt="DIode symbol"></figure>
+
+			<p>(3) When the p-n junction is formed a few electrons from t he n-type diffuse through the junction and
+				combines with the holes in the p-side to form negative ions and leaves behind positive ions in the
+				n-side. This results in the formation of the depletion layer, which acts as the barrier and does not
+				allow any further flow of electrons from the n region to the p region.</p>
+
+
+			<div class="d-flex justify-content-center">
+				<img src="../Resources/depletion_layer.gif" alt="DIode symbol" style="max-width: 450px">
+			</div>
+		</div>
+
+		<div id="Biasing_tech">
+			<h2>BIASING AN PN JUNCTION</h2>
+			<p>1. Reverse Bias(False connection):</p>
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;- If a voltage is applied across the diode in such a way that the n-type half of
+				the diode was connected to the positive terminal of the voltage source and the p-type half was connected
+				to the negative terminal.
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;- Electrons from the external circuit would create more negative ions in the
+				p-type region by "filling the holes" and more positive ions would be created in the n-type region as
+				electrons are displaced toward the positive terminal of the voltage source. hence depletion regions
+				width increases.
+			</p>
+
+			<p>2. Forward Bias(True connection):</p>
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;- If a voltage is applied across the diode in such a way that the n-type half of
+				the diode was connected to the negative terminal of the voltage source and the p-type half was connected
+				to the positive terminal.
+			</p>
+
+		</div>
+	</article>
+	<footer>
+		<!--
+			<a href="../../../">Back</a>
+		-->
+
+	</footer>
+
+	<script>
+		renderMathInElement(document.body);
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
