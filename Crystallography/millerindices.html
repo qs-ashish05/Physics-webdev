@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#">
+<head>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <link rel="shortcut icon" href="http://calistry.org/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="http://calistry.org/calculate/latticePlanesMillerIndices" />
+<link rel="shortlink" href="http://calistry.org/node/177" />
+<meta property="og:site_name" content="Calistry" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Miller Indices visualizer :Lattice Plane" />
+<meta property="og:url" content="http://calistry.org/calculate/latticePlanesMillerIndices" />
+<meta property="og:updated_time" content="2020-02-27T07:44:52+02:00" />
+<meta property="og:image" content="http://calistry.org/CalistryFB.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="http://calistry.org/calculate/latticePlanesMillerIndices" />
+<meta name="twitter:title" content="Miller Indices visualizer :Lattice Plane" />
+<meta property="article:published_time" content="2015-04-03T10:12:09+03:00" />
+<meta property="article:modified_time" content="2020-02-27T07:44:52+02:00" />
+<meta itemprop="name" content="Miller Indices visualizer :Lattice Plane" />
+<meta name="dcterms.title" content="Miller Indices visualizer :Lattice Plane" />
+<meta name="dcterms.creator" content="arkajitmandal" />
+<meta name="dcterms.date" content="2015-04-03T10:12+03:00" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="http://calistry.org/calculate/latticePlanesMillerIndices" />
+<meta name="dcterms.language" content="en" /> -->
+
+  <title>Miller Indices Visualizer: Lattice Plane </title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style type="text/css" media="all">
+@import url("http://calistry.org/modules/system/system.base.css?penoy7");
+@import url("http://calistry.org/modules/system/system.messages.css?penoy7");
+</style>
+<style type="text/css" media="all">
+@import url("http://calistry.org/modules/aggregator/aggregator.css?penoy7");
+@import url("http://calistry.org/modules/comment/comment.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/date/date_api/date.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/date/date_repeat_field/date_repeat_field.css?penoy7");
+@import url("http://calistry.org/modules/field/theme/field.css?penoy7");
+@import url("http://calistry.org/modules/node/node.css?penoy7");
+@import url("http://calistry.org/modules/poll/poll.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/ubercart/uc_store/uc_store.css?penoy7");
+@import url("http://calistry.org/modules/user/user.css?penoy7");
+@import url("http://calistry.org/modules/forum/forum.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/views/css/views.css?penoy7");
+</style>
+<style type="text/css" media="all">
+@import url("http://calistry.org/sites/all/modules/pace/css/pace-theme-loading-bar.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/ctools/css/ctools.css?penoy7");
+</style>
+<style type="text/css" media="all">
+@import url("http://calistry.org/sites/all/themes/progressive/css/buttons/social-icons.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/buttons/buttons.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/font-awesome.min.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/bootstrap.min.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/jslider.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/settings.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/jquery.fancybox.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/animate_progressive.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/video-js.min.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/morris.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/ladda.min.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/style.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/responsive.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/customizer/pages.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/drupal.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/ie/ie.css?penoy7");
+</style>
+<style type="text/css" media="all">
+@import url("http://calistry.org/sites/all/themes/progressive/css/customizer/pages-pages-customizer.css?penoy7");
+@import url("http://calistry.org/sites/default/files/cpn/calculator.css?penoy7");
+@import url("http://calistry.org/sites/default/files/cpn/block-9.css?penoy7");
+@import url("http://calistry.org/sites/default/files/cpn/block-10.css?penoy7");
+</style>
+<style>
+  body {background-color: black;}
+  </style>
+
+</head>
+<body class="fixed-header html not-front not-logged-in no-sidebars page-node page-node- page-node-177 node-type-calculator">
+
+<div class="page-box"><div class="page-box-content">
+  <div class="main" role="main">    
+      <div  style="padding-top: 0px; padding-bottom: 0px; " class="nd-region">  
+
+      <div class = "container-fluid">
+
+        <div  id="Header" class="row">                                    
+                                          <div  class="col-md-12 " id="progressive_cms-menu">
+                              
+                                  <div id="block-progressive-cms-menu" class="widget block block-progressive-cms" >
+     
+
+
+  </div> <!-- /.block -->
+                
+                              </div>
+
+                                    
+          
+                                          <d  id="top" class="col-md-12 ">
+                              
+                                  <div id="block-block-18" class="widget block block-block" >
+  
+        
+  <div class = "block-content clearfix">
+</div>
+   </div>
+
+  </div> <!-- /.block -->
+                
+                              </d>
+                                    
+          
+                                          <div  class="col-md-12 " id="progressive_cms-page_title" style="padding-top: 80px; ">
+                              
+                                  <div id="block-progressive-cms-page-title" class="widget block block-progressive-cms" >
+  
+        
+  <div class = "block-content clearfix">
+    <header class="page-header">
+  <div class="container">
+    <h1 class="title" style="color:#fff;">Miller Indices Visualizer: Lattice Plane</h1>
+  </div>  
+</header>  </div>
+
+  </div> <!-- /.block -->
+                              </div>      
+        </div>
+      </div>
+
+      </div>
+      <div  class="nd-region">
+      <div class = "container">
+        <div  id="Content" class="row">     
+
+          
+                                          <div  id="content" class="col-md-9 ">
+                              
+                                  <div id="block-system-main" class="widget block block-system" >
+  
+        
+  <div class = "block-content clearfix">
+          <h2 class = "hidden" >Miller Indices visualizer :Lattice Plane</h2>
+    
+    
+    <div class="content clearfix node-calculator">
+      <!-- <p style="text-align: center;"><img alt="" class="media-image img_fid218 imgview_modedefault attrformatdefault attrfield_file_image_alt_text[und][0][value]_ attr_field_file_image_title_text[und][0][value]_" src="http://calistry.org/New/sites/default/files/solid_0.png"><img align="middle" alt="begin mathsize 48px style left parenthesis h k l right parenthesis end style" class="Wirisformula" data-mathml="«math style=¨font-family:`Times New Roman`¨ xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mstyle mathsize=¨48px¨»«mo»(«/mo»«mi»h«/mi»«mi»k«/mi»«mi»l«/mi»«mo»)«/mo»«/mstyle»«/math»" src="/New/sites/all/libraries/ckeditor//plugins/ckeditor_wiris/integration/showimage.php?formula=9669fac7bb607345159cc6b842d24f60.png"></p>
+<p style="text-align: center;"><span style="font-size:16px;"><span style="font-family:times new roman,times,serif;">h , k , l= Miller Indices ; &nbsp; &nbsp;</span></span></p> -->
+      <script type="text/javascript" src="http://calistry.org/THREE/js/three/three.js"></script><script type="text/javascript" src="http://calistry.org/THREE/js/three/examples/controls/OrbitControls.js"></script><script type="text/javascript">
+function goPlane(){
+h=document.getElementById('valueH').value;
+k=document.getElementById('valueK').value;
+l=document.getElementById('valueL').value;
+if (h==0 && k==0 && l==0){
+document.getElementById('valueH').className='WrongInput';
+document.getElementById('valueK').className='WrongInput';
+document.getElementById('valueL').className='WrongInput';
+removePlane();
+}
+else{
+document.getElementById('valueH').className='calculatorinput';
+document.getElementById('valueK').className='calculatorinput';
+document.getElementById('valueL').className='calculatorinput';
+removePlane();
+hkl(h,k,l);
+
+}
+
+}
+
+</script>
+<div id='allcontgrols' style='float:left;'>
+	<label for="valueH" style="
+    float: left;
+    padding-top: 10px;
+    padding-right: 8px;
+"><span style="font-weight: normal;"><font face="times new roman" size="5" style="color:#fff;">h : </font></span></label><input class="calculatorinput" id="valueL" onchange="goPlane()" style="width:50px;float:left" type="number" value="0"><label for="valueK" style="
+    float: left;
+    padding-top: 10px;
+    padding-right: 8px;
+"> <span style="font-weight: normal;"><font face="times new roman" size="5" style="color:#fff;">&nbsp;&nbsp;k : </font></span></label> <input class="calculatorinput" id="valueH" onchange="goPlane()" style="width:50px;float:left" type="number" value="0"> <label for="valueL" style="
+    float: left;
+    padding-top: 10px;
+    padding-right: 8px;
+"> <span style="font-weight: normal;"><font face="times new roman" size="5" style="color:#fff;">&nbsp;&nbsp;l : </font></span></label><input class="calculatorinput" id="valueK" onchange="goPlane()" style="width:50px;float:left" type="number" value="0"></div>
+
+<div id='allcontgrolss' style='float:left;'>
+      <div style="float: left;margin-left:40px">
+         <input checked="checked" name="editList" onclick="removeLat()" style="width: 2em;height: 2em;" type="radio" value="none">
+         <span style="font-weight: normal; color:#fff;"> none </span>
+      </div>
+      <div style="float: left;margin-left:40px">
+         <input name="editList" onclick="sc()" style="margin-left:0px;width: 2em;height: 2em;" type="radio" value="sc"> 
+	 <span style="font-weight: normal; color:#fff;">Simple Cubic</span>
+      </div>
+      <div style="float: left;margin-left:40px">
+	  <input name="editList" onclick="bcc()" style="margin-left:0px;width: 2em;height: 2em;" type="radio" value="fcc"> 
+          <span style="font-weight: normal; color:#fff;"> Body Centered</span>
+      </div>
+      <div style="float: left;margin-left:40px">
+          <input name="editList" onclick="fcc()" style="margin-left:0px;width: 2em;height: 2em;" type="radio" value="bcc"> 
+          <span style="font-weight: normal; color:#fff;"> Face Centered</span>
+      </div>
+</div>
+<div id='CanDivEl'><canvas style="width:100%;height:350px;clear:both;"></canvas></div>
+
+<script>
+var model; 
+var renderer,scene,camera; 
+var atomX,atomY,atomZ,atomRad;
+
+ function modelLoadedCallback(geometry, materials) {
+
+    /* create the object from the geometry and materials that were loaded.  There
+       can be multiple materials, which can be applied to the object using MeshFaceMaterials.
+       Note tha the material can include references to texture images might finish
+       loading later. */
+       
+    var object = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
+
+    /* Determine the ranges of x, y, and z in the vertices of the geometry. */
+
+    var xmin = Infinity;
+    var xmax = -Infinity;
+    var ymin = Infinity;
+    var ymax = -Infinity;
+    var zmin = Infinity;
+    var zmax = -Infinity;
+
+    for (var i = 0; i < geometry.vertices.length; i++) {
+        var v = geometry.vertices[i];
+        if (v.x < xmin)
+            xmin = v.x;
+        else if (v.x > xmax)
+            xmax = v.x;
+        if (v.y < ymin)
+            ymin = v.y;
+        else if (v.y > ymax)
+            ymax = v.y;
+        if (v.z < zmin)
+            zmin = v.z;
+        else if (v.z > zmax)
+            zmax = v.z;
+    }
+    
+    /* translate the center of the object to the origin */
+    var centerX = (xmin+xmax)/2;
+    var centerY = (ymin+ymax)/2; 
+    var centerZ = (zmin+zmax)/2;
+    centerXX =centerX ;
+centerYY = centerY ;
+centerZZ = centerZ ;
+    var max = Math.max(centerX - xmin, xmax - centerX);
+    max = Math.max(max, Math.max(centerY - ymin, ymax - centerY) );
+    max = Math.max(max, Math.max(centerZ - zmin, zmax - centerZ) );
+    var scale = 8;
+    object.position.set( -centerX , -centerY, -centerZ  );
+    console.log("length: " , xmax-xmin);
+
+    console.log("Loading finished, scaling object by " + scale);
+    console.log("Center at ( " + centerX + ", " + centerY + ", " + centerZ + " )");
+    
+    /* Create the wrapper, model, to scale and rotate the object. */
+    
+    model = new THREE.Object3D();
+    model.add(object);
+    model.scale.set(scale,scale,scale);
+    rotateX = rotateY = 0;
+    scene.add(model);
+    render();
+
+}
+
+
+function adv(geometry, materials) {
+
+    /* create the object from the geometry and materials that were loaded.  There
+       can be multiple materials, which can be applied to the object using MeshFaceMaterials.
+       Note that the material can include references to texture images might finish
+       loading later. */
+       
+    var object = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
+
+    /* Determine the ranges of x, y, and z in the vertices of the geometry. */
+
+    var xmin = Infinity;
+    var xmax = -Infinity;
+    var ymin = Infinity;
+    var ymax = -Infinity;
+    var zmin = Infinity;
+    var zmax = -Infinity;
+    for (var i = 0; i < geometry.vertices.length; i++) {
+        var v = geometry.vertices[i];
+        if (v.x < xmin)
+            xmin = v.x;
+        else if (v.x > xmax)
+            xmax = v.x;
+        if (v.y < ymin)
+            ymin = v.y;
+        else if (v.y > ymax)
+            ymax = v.y;
+        if (v.z < zmin)
+            zmin = v.z;
+        else if (v.z > zmax)
+            zmax = v.z;
+    }
+    
+    /* translate the center of the object to the origin */
+    var centerX = (xmin+xmax)/2;
+    var centerY = (ymin+ymax)/2; 
+    var centerZ = (zmin+zmax)/2;
+    centerXX =centerX ;
+centerYY = centerY ;
+centerZZ = centerZ ;
+    var max = Math.max(centerX - xmin, xmax - centerX);
+    max = Math.max(max, Math.max(centerY - ymin, ymax - centerY) );
+    max = Math.max(max, Math.max(centerZ - zmin, zmax - centerZ) );
+    var scale = atomRad;
+    object.position.set( -centerX +atomX, -centerY+atomY, -centerZ +atomZ );
+    console.log("length: " , xmax-xmin);
+
+    console.log("Loading finished, scaling object by " + scale);
+    console.log("Center at ( " + centerX + ", " + centerY + ", " + centerZ + " )");
+    
+    /* Create the wrapper, model, to scale and rotate the object. */
+    
+    model = new THREE.Object3D();
+    model.add(object);
+    model.scale.set(scale,scale,scale);
+    rotateX = rotateY = 0;
+    scene.add(model);
+    render();
+
+}
+
+function render() {
+    renderer.render(scene, camera);
+}
+
+
+
+function TriangleGeometry(location) {
+	var geo = new THREE.Geometry();
+        
+	var h = location[0];
+	var k = location[1];
+        var l = location[2];
+xa=0;ya=0;za=0;
+	if (h<0){
+        
+        xa=     parseInt(Math.abs(h/16)+0.9998)*16    ;       
+        }
+if (k<0){
+      
+        ya=     parseInt(Math.abs(k/16)+0.9998)*16    ;   
+        
+        }
+if (l<0){
+       za=     parseInt(Math.abs(l/16)+0.9998)*16    ;   
+        
+        }
+
+        geo.vertices.push( new THREE.Vector3( h-8.02+xa, 0-8.02+ya, 0-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, k-8.02+ya, 0-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, 0-8.02+ya, l-8.02+za) );
+	// generate faces
+	
+	geo.faces.push( new THREE.Face3( 0, 1, 2 ) );	
+	return geo;
+}
+function SquareGeometry(location) {
+	var geo = new THREE.Geometry();
+        
+	var h = location[0];
+	var k = location[1];
+        var l = location[2];
+xa=0;ya=0;za=0;
+
+	if (h<0){
+        
+        xa=     parseInt(Math.abs(h/16)+0.9998)*16    ;       
+        }
+if (k<0){
+      
+        ya=     parseInt(Math.abs(k/16)+0.9998)*16    ;   
+        
+        }
+if (l<0){
+       za=     parseInt(Math.abs(l/16)+0.9998)*16    ;   
+        
+        }
+        if (Math.abs(h)==Infinity){
+        geo.vertices.push( new THREE.Vector3( 8+xa, k-8.02+ya, 0-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 8+xa, 0-8.02+ya, l-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, k-8.02+ya, 0-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, 0-8.02+ya, l-8.02+za) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+        if (Math.abs(k)==Infinity){
+        geo.vertices.push( new THREE.Vector3( h-8.02+xa, 8+ ya, 0-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 0-8.02+xa,  8+ya, l-8.02+za ) );       
+        geo.vertices.push( new THREE.Vector3( h-8.02+xa, 0-8.02+ya, 0-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, 0-8.02+ya, l-8.02+za) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+
+        if (Math.abs(l)==Infinity){
+        geo.vertices.push( new THREE.Vector3( h-8.02+xa, 0-8.02+ ya, 8+za ) );
+        geo.vertices.push( new THREE.Vector3( 0-8.02+xa, k-8.02+ ya, 8+za ) );       
+        geo.vertices.push( new THREE.Vector3( h-8.02+xa, 0-8.02+ya, 0-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, k-8.02+ya, 0-8.02+za) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+
+	return geo;
+}
+
+
+function SquareGeo(location) {
+	var geo = new THREE.Geometry();
+        
+	var h = location[0];
+	var k = location[1];
+    var l = location[2];
+
+xa=0;ya=0;za=0;
+console.log(h,k,l);
+	if (h<0){
+        xa=     parseInt(Math.abs(h/16)+0.9998)*16    ;       
+        if (isNaN(xa)){xa=0}       
+        }
+if (k<0){
+        ya=     parseInt(Math.abs(k/16)+0.9998)*16    ;       
+        if (isNaN(ya)){ya=0}
+        }
+if (l<0){
+        za=     parseInt(Math.abs(l/16)+0.9998)*16    ;       
+
+        if (isNaN(za)){za=0}
+        }
+        if (Math.abs(h)==Infinity && Math.abs(k)==Infinity  ){
+        geo.vertices.push( new THREE.Vector3( -8+xa, -8.0+ya, l-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( -8+xa, 8.0+ya, l-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 8+xa, -8.0+ya, l-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 8+xa, 8.0+ya, l-8.02+za ) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+        if (Math.abs(h)==Infinity && Math.abs(l)==Infinity  ){
+        geo.vertices.push( new THREE.Vector3( -8+xa, k-8.0+ya, -8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( -8+xa, k-8.0+ya, 8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 8+xa, k-8.0+ya, -8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 8+xa, k-8.0+ya, 8.02+za ) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+
+        if (Math.abs(l)==Infinity && Math.abs(k)==Infinity  ){
+        geo.vertices.push( new THREE.Vector3( h-8+xa, -8.0+ya,-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( h-8+xa, 8.0+ya, -8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( h-8+xa, -8.0+ya, 8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( h-8+xa, 8.0+ya, 8.02+za ) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+	return geo;
+}
+function installModel(file, bgColor) { 
+    if (model) {
+        scene.remove(model);
+    }
+    renderer.setClearColor(bgColor);
+    render();
+    var loader = new THREE.JSONLoader();
+    loader.load("http://calistry.org/THREE/models-json/" + file, modelLoadedCallback);
+}
+
+function init() {  
+  var canv = document.getElementsByTagName("canvas")[0];
+  var w = canv.clientWidth;
+  var h = canv.clientHeight;
+try{  renderer = new THREE.WebGLRenderer({canvas:canv}); }
+catch(err){
+document.getElementById('allcontgrolss').innerHTML='';
+document.getElementById('allcontgrols').innerHTML='';
+document.getElementById('CanDivEl').innerHTML="<canvas style='width:100%;height:350px;clear:both;'></canvas>Error! Try refreshing!"}
+  renderer.setSize( w, h );
+  renderer.setClearColor(new THREE.Color(000), 1); // background of canvas 333
+
+   scene = new THREE.Scene();
+
+   camera = new THREE.PerspectiveCamera(
+      15,     // Field of view
+      w / h,  // Aspect ratio
+      0.1,    // Near
+      10000   // Far
+  );
+  
+  // Camera looks toward negative z with y up
+  camera.position.set( 5, 5, 100 );
+  
+  var control = new THREE.OrbitControls(camera,canv);
+
+// installModel("cube.json",'#d8dee9');
+
+var light = new THREE.AmbientLight( 0x513030); // soft white light .... changes color of spheres 333
+scene.add( light );
+ var directionalLight = new THREE.DirectionalLight(0xffffff);
+      directionalLight.position.set(1, 3, 1).normalize();
+      scene.add(directionalLight);
+ 
+var geometry = new THREE.BoxGeometry( 15, 15, 15 );
+var material = new THREE.MeshBasicMaterial( { color: 0xff0000, side: THREE.BackSide, wireframe: true } ); 
+var cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+axes = new THREE.AxisHelper( 10 );
+axes.position.set(-7.5,-7.5,-7.5)
+scene.add( axes );
+  var clock = new THREE.Clock();
+  var render = function() {
+    var dt = clock.getDelta();
+    control.update(dt);
+    renderer.render(scene,camera);
+    requestAnimationFrame(render);
+  };
+
+  requestAnimationFrame(render);
+}
+
+var plane;
+
+function hkl(h,k,l){
+
+div=Math.max(Math.abs(h),Math.abs(k),Math.abs(l));
+z=16/Math.max(Math.abs(div/h),Math.abs(div/k),Math.abs(div/l));
+if(h==0){z=16/Math.max(Math.abs(div/k),Math.abs(div/l));}
+if(k==0){z=16/Math.max(Math.abs(div/h),Math.abs(div/l));}
+if(l==0){z=16/Math.max(Math.abs(div/h),Math.abs(div/k));}
+if(h==0 && k==0){z=16*l/div;}
+if(l==0 && k==0){z=16*h/div;}
+if(h==0 && l==0){z=16*k/div;}
+//ih=div*z/h;
+ih=16/h;
+ik=16/k;
+il=16/l;
+
+var geo = TriangleGeometry([ih,ik,il]);
+if (h==0||k==0||l==0){
+var geo = SquareGeometry([ih,ik,il]);
+
+}
+if((h==0 && k==0)||(l==0 && k==0)||(h==0 && l==0)){
+var geo = SquareGeo([ih,ik,il]);
+
+}
+
+
+var material = new THREE.MeshBasicMaterial( { color: 0x2facc2, side: THREE.DoubleSide ,opacity: 0.5,transparent:true} );
+plane = new THREE.Mesh( geo, material );
+
+scene.add( plane);
+
+scene.children[scene.children.length-1].rotation.set(rotateX,rotateY,0);
+render();
+
+}
+
+var sphere=[];
+
+function lattice(a,b,c,d){
+
+var material = new THREE.MeshLambertMaterial( { color: 0xcd3333, side: THREE.DoubleSide} );
+sphere.push( new THREE.Mesh(new THREE.SphereGeometry(d, 20, 20), material ));
+
+
+sphere[sphere.length-1].overdraw = true;
+sphere[sphere.length-1].position.set( a , b, c  );
+scene.add(sphere[sphere.length-1]);
+render();
+}
+
+
+function removePlane(){
+scene.remove(plane);
+
+} 
+function removeLat(){
+for (var i=0;i<sphere.length;i=i+1){
+scene.remove(sphere[i]);
+
+} 
+
+}
+
+function sc(){
+removeLat();
+lattice(8,8,8,2);
+lattice(8,8,-8,2);
+lattice(8,-8,8,2);
+lattice(8,-8,-8,2);
+lattice(-8,8,8,2);
+lattice(-8,8,-8,2);
+lattice(-8,-8,8,2);
+lattice(-8,-8,-8,2);
+
+
+}
+
+function bcc(){
+removeLat();
+lattice(8,8,8,2);
+lattice(8,8,-8,2);
+lattice(8,-8,8,2);
+lattice(8,-8,-8,2);
+lattice(-8,8,8,2);
+lattice(-8,8,-8,2);
+lattice(-8,-8,8,2);
+lattice(-8,-8,-8,2);
+
+
+lattice(0,0,0,2);
+}
+
+function fcc(){
+removeLat();
+lattice(8,8,8,2);
+lattice(8,8,-8,2);
+lattice(8,-8,8,2);
+lattice(8,-8,-8,2);
+lattice(-8,8,8,2);
+lattice(-8,8,-8,2);
+lattice(-8,-8,8,2);
+lattice(-8,-8,-8,2);
+
+lattice(0,0,-8,2);
+lattice(0,0,8,2);
+lattice(0,-8,0,2);
+lattice(0,8,0,2);
+lattice(-8,0,0,2);
+lattice(8,0,0,2);
+}
+
+function hdf(numbers){
+var num=numbers;
+
+
+for (var i=1;i<Math.max(numbers[0],numbers[1],numbers[2]);i=i+1){
+//console.log('Working with: ',i,num);
+div=true;
+for (var j=0;j<num.length;j=j+1){
+ //console.log('going for',num[j]);
+if (numbers[j]%i != 0){ div=false;  //console.log('OOps: ',num[j]);
+}
+
+}
+
+if (div){hdfn=i;}
+
+}
+return hdfn;
+
+}
+
+
+window.onresize = init;
+window.onload = init;
+try {init();} catch(err){}
+try {init();} catch(err){}
+</script>    </div>
+
+    
+        </div>
+
+  </div> <!-- /.block -->
+
+                
+                              </div>
+                                    
+
+        </div>
+
+      </div>
+
+    
+      </div>
+
+  </div>
+
+</div></div>  <script type="text/javascript" src="http://calistry.org/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script type="text/javascript" src="http://calistry.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://calistry.org/misc/drupal.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/modules/admin_menu/admin_devel/admin_devel.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/modules/pace/js/pace.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/modules/google_analytics/googleanalytics.js?penoy7"></script>
+<script type="text/javascript">
+// <!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-34708501-2", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://calistry.org/sites/all/modules/fb_likebox/fb_likebox.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/bootstrap.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/jshashtable-2.1_src.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/jquery.numberformatter-1.2.3.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/tmpl.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/jquery.dependClass-0.1.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/draggable-0.1.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/jquery.slider.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.carouFredSel-6.2.1-packed.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.touchSwipe.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.elevateZoom-3.0.8.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.imagesloaded.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.appear.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.sparkline.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.easypiechart.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.easing.1.3.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.fancybox.pack.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/isotope.pkgd.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/pixastic.custom.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.knob.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.stellar.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.selectBox.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.royalslider.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.tubular.1.0.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/country.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/spin.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/ladda.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/masonry.pkgd.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/morris.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/raphael.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/video.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/livicons-1.3.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/SmoothScroll.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/main.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/drupal.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/default/files/cpn/calculator.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/default/files/cpn/block-20.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/default/files/cpn/block-9.js?penoy7"></script>
+<script type="text/javascript">
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"progressive_sub","theme_token":"dcAuO6sCkt0dqCpt8Dl5RQIxA2zXoTHRCeo5pyCQiwQ","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/pace\/js\/pace.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/fb_likebox\/fb_likebox.js":1,"sites\/all\/themes\/progressive\/js\/bootstrap.min.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/jshashtable-2.1_src.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/jquery.numberformatter-1.2.3.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/tmpl.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/jquery.dependClass-0.1.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/draggable-0.1.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/jquery.slider.js":1,"sites\/all\/themes\/progressive\/js\/jquery.carouFredSel-6.2.1-packed.js":1,"sites\/all\/themes\/progressive\/js\/jquery.touchSwipe.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.elevateZoom-3.0.8.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.imagesloaded.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.appear.js":1,"sites\/all\/themes\/progressive\/js\/jquery.sparkline.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.easypiechart.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.easing.1.3.js":1,"sites\/all\/themes\/progressive\/js\/jquery.fancybox.pack.js":1,"sites\/all\/themes\/progressive\/js\/isotope.pkgd.min.js":1,"sites\/all\/themes\/progressive\/js\/pixastic.custom.js":1,"sites\/all\/themes\/progressive\/js\/jquery.knob.js":1,"sites\/all\/themes\/progressive\/js\/jquery.stellar.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.selectBox.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.royalslider.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.tubular.1.0.js":1,"sites\/all\/themes\/progressive\/js\/country.js":1,"sites\/all\/themes\/progressive\/js\/spin.min.js":1,"sites\/all\/themes\/progressive\/js\/ladda.min.js":1,"sites\/all\/themes\/progressive\/js\/masonry.pkgd.min.js":1,"sites\/all\/themes\/progressive\/js\/morris.min.js":1,"sites\/all\/themes\/progressive\/js\/raphael.min.js":1,"sites\/all\/themes\/progressive\/js\/video.js":1,"sites\/all\/themes\/progressive\/js\/livicons-1.3.min.js":1,"sites\/all\/themes\/progressive\/js\/SmoothScroll.js":1,"sites\/all\/themes\/progressive\/js\/main.js":1,"sites\/all\/themes\/progressive\/js\/drupal.js":1,"public:\/\/cpn\/calculator.js":1,"public:\/\/cpn\/block-20.js":1,"public:\/\/cpn\/block-9.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"sites\/all\/modules\/ubercart\/uc_store\/uc_store.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/pace\/css\/pace-theme-loading-bar.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/progressive\/css\/buttons\/social-icons.css":1,"sites\/all\/themes\/progressive\/css\/buttons\/buttons.css":1,"sites\/all\/themes\/progressive\/css\/font-awesome.min.css":1,"sites\/all\/themes\/progressive\/css\/bootstrap.min.css":1,"sites\/all\/themes\/progressive\/css\/jslider.css":1,"sites\/all\/themes\/progressive\/css\/settings.css":1,"sites\/all\/themes\/progressive\/css\/jquery.fancybox.css":1,"sites\/all\/themes\/progressive\/css\/animate_progressive.css":1,"sites\/all\/themes\/progressive\/css\/video-js.min.css":1,"sites\/all\/themes\/progressive\/css\/morris.css":1,"sites\/all\/themes\/progressive\/css\/royalslider\/royalslider.css":1,"sites\/all\/themes\/progressive\/css\/royalslider\/skins\/minimal-white\/rs-minimal-white.css":1,"sites\/all\/themes\/progressive\/css\/layerslider\/layerslider.css":1,"sites\/all\/themes\/progressive\/css\/ladda.min.css":1,"sites\/all\/themes\/progressive\/css\/style.css":1,"sites\/all\/themes\/progressive\/css\/responsive.css":1,"sites\/all\/themes\/progressive\/css\/customizer\/pages.css":1,"sites\/all\/themes\/progressive\/css\/drupal.css":1,"sites\/all\/themes\/progressive\/css\/ie\/ie.css":1,"sites\/all\/themes\/progressive\/progressive_sub\/css\/custom.css":1,"sites\/all\/themes\/progressive\/css\/customizer\/pages-pages-customizer.css":1,"cpn_type_calculator":1,"public:\/\/cpn\/block-9.css":1,"public:\/\/cpn\/block-10.css":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"fb_likebox_app_id":"","fb_likebox_language":"en_EN","urlIsAjaxTrusted":{"\/calculate\/latticePlanesMillerIndices":true},"theme_path":"sites\/all\/themes\/progressive","progressive":{"mobile_menu_toggle":0},"ubercart_currency":"$"});
+
+</script>
+  
+</body>
+</html>
