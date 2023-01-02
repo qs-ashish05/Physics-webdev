@@ -1,0 +1,68 @@
+<!DOCTYPE html5>
+<html5 lang="en">   
+    <head> 
+      <link rel="stylesheet" href="CSS/CSstyles.css">
+      <link rel="shortcut icon" type="image/x-icon" href="Assets/ogtpclogo.png">
+      <title>Crystals</title>  
+    </head>  
+    <body> 
+      <a href="index.html" class="next round">&laquo; BACK</a>
+        <header>
+            <h1>Crystals</h1>
+        </header>
+        <hr>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">∧</button>
+        <div class="timeline">
+            <div class="container right">
+                    <h2>Diamond</h2>
+                    <h5>It is formed by the interpenetration of two FCC sub-lattices along the body diagonal by 1/4th cube edge.
+                      <br>A unit cell has:<br>1. Eight corner atoms<br>2. Six face centered atoms<br>3. Four more atoms located inside</h5>
+                    <iframe scrolling="no" src="https://editor.p5js.org/Salona/full/rrlKzRZhS"></iframe>
+            </div>
+            <br><br><br>
+            <div class="container right">
+                <h2>ZnS</h2>
+                <h5>It has the similar structure as Diamond.<br>The Eight corner atoms and Six face centered atoms are of Sulphur.<br>The Four atoms located inside are of Zinc</h5>
+                <iframe scrolling="no" src="https://editor.p5js.org/Salona/full/1VCElo-WD"></iframe>
+        </div>
+        <br><br><br>
+        <div class="container right">
+            <h2>NaCl</h2>
+            <h5>Sodium Chloride is an ionic compund and belongs to the FCC structure.<br>The small atoms represent Na+ ion and big atoms represent Cl- ion</h5>
+            <iframe scrolling="no" src="https://editor.p5js.org/Salona/full/ITe2ytM4A"></iframe>
+    </div>
+    <div class="container right">
+        <h2>Hexagonal Closed Packed (HCP)</h2>
+        <h5>It has three layers. The top and bottom form a hexagon and middle layer forms a triangle.</h5>
+        <iframe scrolling="no" src="https://editor.p5js.org/Salona/full/k1mygZkIU"></iframe>
+</div>
+</div>
+        <br>
+        <hr>
+        <br>
+    <footer><a href="https://www.instagram.com/dbit_physicsclub/?hl=en" class="underline" target="_blank">The Physics Club</a> @ Team 2020-2022</footer>
+    <br>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html5>
